@@ -37,7 +37,7 @@ if mode =="Image -> Text":
 else:
     st.header("Text to Image")
     prompt = st.text_area("Prompt",height=600)
-    size  = st.selectbox("Size",["256x256","512x512","1024x1024"],index = 1) 
+    size  = st.selectbox("Size",["1024 x 1024","1536 x 1024 ","1024 x 1536"],index = 1) 
     num = st.slider("Number of images",1,4,1)
 
     if st.button('Generate Image(s)'):
